@@ -6,42 +6,82 @@
     <title>Document</title>
   </head>
   <body>
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" />
-    <br />
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Full Name" />
+      <br />
 
-    <label for="pw">Password:</label>
-    <input type="password" id="pw" name="password" />
-    <br />
+      <label for="pw">Password:</label>
+      <input type="password" id="pw" name="password" placeholder="password" />
+      <br />
 
-    <label for="email">Your email:</label>
-    <input type="email" id="email" name="email" />
-    <br />
+      <label for="email">Your email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@gmail.com"
+      />
+      <br />
 
-    <label for="number"> Number:</label>
-    <input type="number" id="number" name="number" />
-    <br />
+      <label for="number"> Number:</label>
+      <input type="number" id="number" name="number" required />
+      <br />
 
-    <label for="date">date of birth:</label>
-    <input type="date" id="date" name="date" />
-    <br />
+      <label for="date">date of birth:</label>
+      <input type="date" id="date" name="date" />
+      <br />
 
-    <label for="color">Pick your color:</label>
-    <input type="color" id="color" name="color" />
-    <br />
+      <label for="color">Pick your color:</label>
+      <input type="color" id="color" name="color" />
+      <br />
 
-    <label for="file">Your file:</label>
-    <input type="file" name="file" id="file" />
-    <br />
+      <label for="file">Your file:</label>
+      <input type="file" name="file" id="file" />
+      <br />
 
-    <label for="gender"
-      >male:<input type="radio" name="gender" value="male"
-    /></label>
-    <label for="gender"
-      >female:<input type="radio" name="gender" value="female"
-    /></label>
-    <label for="gender"
-      >other:<input type="radio" name="gender" value="other"
-    /></label>
+      <label for="gender"
+        >male:<input type="radio" name="gender" value="male"
+      /></label>
+      <label for="gender"
+        >female:<input type="radio" name="gender" value="female"
+      /></label>
+      <label for="gender"
+        >other:<input type="radio" name="gender" value="other"
+      /></label>
+      <br />
+
+      <label for="hobies"
+        >criket:<input type="checkbox" name="hobies" value="criket"
+      /></label>
+      <label for="hobies"
+        >football:<input type="checkbox" name="hobies" value="football"
+      /></label>
+      <label for="hobies"
+        >reading:<input type="checkbox" name="hobies" value="reading"
+      /></label>
+      <br />
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Username:</label>
+        <input type="text" name="name" id="name" />
+        <br />
+        <br />
+        <label for="email">Useremail:</label>
+        <input type="email" name="email" id="email" />
+      </fieldset>
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+        <br />
+      </fieldset>
+    </form>
   </body>
 </html>
